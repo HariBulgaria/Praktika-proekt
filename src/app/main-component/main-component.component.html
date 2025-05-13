@@ -1,1 +1,50 @@
-<main><p>{{title}}</p></main>
+<main>
+    <div style="display: flex;">
+        <mat-form-field appearance="fill" style="width: 95%; margin: 10px;">
+            <mat-label>Ticket Validity Length</mat-label>
+            <mat-select>
+                <mat-option value="week">1 Week</mat-option>
+                <mat-option value="month">1 Month</mat-option>
+                <mat-option value="sixMonths">6 Months</mat-option>
+                <mat-option value="year">1 Year</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill" style="width: 95%; margin: 10px;">
+            <mat-label>Ticket Type</mat-label>
+            <mat-select>
+                <mat-option value="standard">Standard</mat-option>
+                <mat-option value="children">Children</mat-option>
+                <mat-option value="adults">Adults</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div style="display: inline;">
+        <mat-form-field appearance="fill" style="width: 99%; margin: 10px;">
+            <mat-label>First Name, Middle Name, Last Name</mat-label>
+            <input matInput placeholder="">
+        </mat-form-field>
+        <mat-form-field appearance="fill" style="width: 99%; margin: 10px;">
+            <mat-label>Email Address</mat-label>
+            <input matInput placeholder="yourEmailAddress@gmail.com">
+        </mat-form-field>
+        <mat-form-field appearance="fill" style="width: 99%; margin: 10px;">
+            <mat-label>Current Address</mat-label>
+            <input matInput placeholder="Nation, Province, County, City, Street">
+        </mat-form-field>
+    </div>
+    <div style="display: flex;">
+        <mat-form-field appearance="fill" style="width: 99%; margin: 10px;">
+            <mat-label>EGN</mat-label>
+            <input matInput placeholder="0123456789">
+        </mat-form-field>
+        <mat-form-field appearance="fill" style="width: 99%; margin: 10px;">
+            <mat-label>Credit Card Number</mat-label>
+            <input matInput placeholder="0123 4567 8910 1112">
+        </mat-form-field>
+        <mat-form-field appearance="fill" style="width: 99%; margin: 10px;">
+            <mat-label>Phone Number</mat-label>
+            <input matInput placeholder="+0123456789">
+        </mat-form-field>
+    </div>
+    <button mat-flat-button color="primary" style="margin: 10px; width: 200px; height: 50px;">Submit</button>
+</main>
